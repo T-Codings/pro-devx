@@ -1,3 +1,4 @@
+/* CSS Variables */
 :root {
   --primary-color: #60269e;
   --secondary-bg: #f8f3fd;
@@ -130,6 +131,38 @@ button.sign-in + button {
   padding: 13px 12px;
   border-radius: 14px;
 
+}
+
+.ethical-pyton-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.skill-badge-card {
+  margin: 0;
+  min-width: 132px;
+  padding: 14px 16px 10px;
+  border-radius: 16px;
+  background-color: var(--white);
+  box-shadow: 0 8px 24px rgba(96, 38, 158, 0.1);
+  text-align: center;
+}
+
+.skill-badge-card img {
+  display: block;
+  height: 80px;
+  width: auto;
+  margin: 0 auto;
+}
+
+.skill-badge-card figcaption {
+  margin-top: 8px;
+  font-size: var(--fs-sm);
+  font-weight: bold;
+  color: var(--primary-color);
 }
 
 .h11 {
@@ -385,6 +418,139 @@ button.sign-in + button {
   box-shadow: var(--shadow);
   background-color: var(--white);
    cursor: pointer;
+}
+
+/* Our Programs */
+.program-showcase {
+  width: var(--container-desktop);
+  margin: 72px auto 0;
+}
+
+.program-showcase-copy {
+  text-align: center;
+}
+
+.program-eyebrow {
+  margin: 0;
+  color: var(--primary-color);
+  font-size: var(--fs-sm);
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.program-showcase-title {
+  margin: 14px auto 0;
+  width: 100%;
+  max-width: 620px;
+  font-size: var(--fs-3xl);
+}
+
+.program-showcase-text {
+  margin: 14px auto 0;
+  width: 100%;
+  max-width: 560px;
+  font-size: var(--fs-md);
+  line-height: 24px;
+}
+
+.program-showcase-grid {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.course-highlight-card {
+  margin: 32px 0 0;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+}
+
+.course-highlight-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.program-showcase-card {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  background-color: var(--white);
+}
+
+.program-showcase-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.frame-gallery-div {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: center;
+}
+
+.frame-gallery-div img {
+  display: block;
+  width: 100%;
+  max-width: 244px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ellipse-gallery-div {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.ellipse-gallery-div img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 88px;
+}
+
+.trending-programs-copy {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.trending-programs-title {
+  margin: 12px auto 0;
+  max-width: 520px;
+  font-size: var(--fs-2xl);
+}
+
+.trending-programs-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.trending-program-card {
+  margin: 0;
+  border-radius: 18px;
+  overflow: hidden;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.trending-program-card img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 /* Join Developer Community */
@@ -894,6 +1060,46 @@ footer {
       margin-top: -30px;
     }
 
+  .program-showcase {
+    width: var(--container-mobile);
+    margin-top: 56px;
+  }
+
+  .program-showcase-title {
+    font-size: var(--fs-2xl);
+  }
+
+  .program-showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .course-highlight-card {
+    margin-top: 24px;
+  }
+
+  .frame-gallery-div {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .ellipse-gallery-div {
+    gap: 12px;
+  }
+
+  .ellipse-gallery-div img {
+    max-width: 70px;
+  }
+
+  .trending-programs-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .trending-programs-title {
+    font-size: var(--fs-xl);
+  }
+
   .button-div button.sign-in {
     font-size: var(--fs-sm);
     width: 100%;
@@ -1103,7 +1309,7 @@ footer {
   }
 
   /* community images wrapper */
-  .community-images-holder {
+  .developer-community-div > div:last-child {
     display: flex;
     flex-direction: column;
     align-items: center;
